@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    include:
+      - oauth
+      - jwt
+
+  application:
+    name: server
+
+  security:
+    user:
+      name: admin
+      password: qwer!@34
+
+  datasource:
+    url: jdbc:mysql://192.168.1.248/chpark_test
+    username: root
+    password: qwer!@34
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        show_sql: true
+    open-in-view: true
