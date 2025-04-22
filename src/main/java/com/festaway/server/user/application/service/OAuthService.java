@@ -38,7 +38,7 @@ public class OAuthService implements OAuthUseCase {
 
     @Override
     public String getRedirectUri() {
-        String redirectUri = "http://localhost:8080/login/oauth2/code/google";  // GCP에 등록된 URI와 정확히 일치
+        String redirectUri = "http://localhost:8080/api/auth/login/googleCallBack";  // GCP에 등록된 URI와 정확히 일치
         return
                 "https://accounts.google.com/o/oauth2/v2/auth" +
                         "?client_id=" + clientId +
