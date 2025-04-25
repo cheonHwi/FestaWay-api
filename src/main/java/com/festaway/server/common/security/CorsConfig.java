@@ -1,4 +1,4 @@
-package com.festaway.server.common.config;
+package com.festaway.server.common.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
