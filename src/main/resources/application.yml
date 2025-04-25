@@ -19,12 +19,16 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
-    database-platform: org.hibernate.dialect.MySQL8Dialect
     hibernate:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-      ddl-auto: create-drop
+      ddl-auto: validate
+
     properties:
       hibernate:
         show_sql: true
     open-in-view: true
+
+logging:
+  level:
+    org.springframework.security: info
