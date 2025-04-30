@@ -22,7 +22,7 @@ spring:
     hibernate:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-      ddl-auto: validate
+      ddl-auto: create-drop
 
     properties:
       hibernate:
@@ -31,4 +31,4 @@ spring:
 
 logging:
   level:
-    org.springframework.security: info
+    org.springframework.security: info1
