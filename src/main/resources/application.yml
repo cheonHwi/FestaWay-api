@@ -31,4 +31,4 @@ spring:
 
 logging:
   level:
-    org.springframework.security: info1
+    org.springframework.security: info
